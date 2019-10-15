@@ -1,51 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title> SULEYMAN SEFA AYRAN - 2016280056 </title>
 <body>
- Suleyman Sefa AYRAN - 2016280056   
 <h2>2019 Güz Döneminin ilk ödevi</h2>
-<h1 id="sonuc"></h1>
-<label for="id1"> Sayi1 :</label>
-<input type='text' onkeypress='return event.charCode>= 48 &&event.charCode<= 57' id='id1' /> 
+<label for="id1">Metin kutusu 1</label>
+<input type='text' id='id1' />
 <br>
-<label for="id2"> Sayi2 :</label>
-<input type='text' onkeypress='return event.charCode>= 48 &&event.charCode<= 57'id='id2' /> 
+<label for="id2">Metin kutusu 2</label>
+<input type='text' id='id2' />
 <br><br>
-<button onclick="topla()">Topla</button>
+<button type="button">Topla</button>
 <br><br>
-<!-- KAYNAKÇA
-http://www.engincode.com/input-only-number-in-javascript
-https://www.bilisimogretmeni.com/javascript/javascript-ornekleri-dort-islem.html
-https://www.w3schools.com/default.asp
- -->
-<script>
-   function topla(){
-      var  sayi1= parseInt(document.getElementById('id1').value);
-      var  sayi2= parseInt(document.getElementById('id2').value);
-        document.getElementById('sonuc').value = sayi1+sayi2;
-        alert(sayi1+sayi2);
-    }
-</script>
-<h1 id="yapistir"></h1>
-<label for="id3">Metin kutusu 1 :</label>
-<input type='text' id='id3' /> 
+<label for="id3">Metin kutusu 3</label>
+<input type='text' id='id3' />
 <br>
-<label for="id4">Metin kutusu 2 :</label>
-<input type='text' id='id4' /> 
+<label for="id4">Metin kutusu 4</label>
+<input type='text' id='id4' />
 <br><br>
-<button onclick="birlestir()">Yapıstır</button>
-
-<script>
-  function birlestir(){
-    var yenimetin;
-    var metin1=document.getElementById('id3').value;
-    var metin2=document.getElementById('id4').value;
-    yenimetin = metin1+ "" +metin2;
-    alert(yenimetin);
-  }
-  </script>
-
+<button type="button">Yapıştır</button>
 </body>
 </html>
